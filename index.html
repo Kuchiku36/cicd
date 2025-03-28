@@ -41,7 +41,6 @@
       border-radius: 8px;
       cursor: pointer;
       margin-left: 10px;
-      display: flex;
     }
     button:hover {
       background-color: #45a049;
@@ -77,12 +76,16 @@
     .delete-btn:hover {
       background-color: #c0392b;
     }
+    .form-group {
+  display: flex;
+  align-items: center;
+}
   </style>
 </head>
 <body>
   <div class="todo-container">
     <h1>📝 Ma To-Do List</h1>
-    <div>
+    <div class="form-group" >
       <input type="text" id="taskInput" placeholder="Ajouter une tâche...">
       <button onclick="addTask()">Ajouter</button>
     </div>
